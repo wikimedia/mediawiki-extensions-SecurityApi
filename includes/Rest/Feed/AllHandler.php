@@ -91,6 +91,6 @@ class AllHandler extends SimpleHandler {
 				new MessageValue( 'securityapi-rest-error' ), $response->getErrors()[0]['params'][0] );
 		}
 
-		return $this->getResponseFactory()->createJson( json_decode($req->getContent()) );
+		return $this->getResponseFactory()->createJson( json_decode( $req->getContent() ) );
 	}
 }

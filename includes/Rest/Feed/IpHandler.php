@@ -10,9 +10,9 @@ use MediaWiki\Rest\Response;
 use MediaWiki\Rest\SimpleHandler;
 use MediaWiki\User\UserIdentity;
 use RequestContext;
+use Wikimedia\IPUtils;
 use Wikimedia\Message\MessageValue;
 use Wikimedia\ParamValidator\ParamValidator;
-use Wikimedia\IPUtils;
 
 class IpHandler extends SimpleHandler {
 	/** @var Config */
@@ -97,7 +97,7 @@ class IpHandler extends SimpleHandler {
 				new MessageValue( 'securityapi-rest-error' ), $response->getErrors()[0]['params'][0] );
 		}
 
-		return $this->getResponseFactory()->createJson( json_decode($req->getContent()) );
+		return $this->getResponseFactory()->createJson( json_decode( $req->getContent() ) );
 	}
 
 	/**

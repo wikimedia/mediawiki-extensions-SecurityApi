@@ -3,7 +3,6 @@
 namespace MediaWiki\SecurityApi\Test\Unit\Feed\Handler;
 
 use Config;
-use MediaWiki\Http\HttpRequestFactory;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Rest\LocalizedHttpException;
 use MediaWiki\Rest\RequestData;
