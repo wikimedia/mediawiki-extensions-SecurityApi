@@ -5,9 +5,13 @@
 	"version": "1.0",
 	"license-name": "MIT",
 	"type": "other",
-	"manifest_version": 1,
+	"requires": {
+		"MediaWiki": ">= 1.33.0"
+	},
 	"MessagesDirs": {
-		"SecurityApi": [ "i18n" ]
+		"SecurityApi": [
+			"i18n"
+		]
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\SecurityApi\\": "includes/"
@@ -41,8 +45,9 @@
 	],
 	"config": {
 		"wgSecurityApiUrl": {
-			"value": false,
-			"description": "Base URL of security-api to be called"
+			"description": "Base URL of security-api to be called",
+			"value": false
 		}
-	}
+	},
+	"manifest_version": 2
 }
