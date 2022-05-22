@@ -8,6 +8,6 @@
 	"securityapi-rest-error": "security-api responded with an error",
 	"securityapi-invalid-ip": "IP is invalid",
 	"securityapi-invalid-url": "security-api server URL is invalid",
-	"action-securityapi-feed": "Retrieve data from the security-api feed",
+	"action-securityapi-feed": "retrieve data from the security-api feed",
 	"right-securityapi-feed": "Retrieve data from the security-api feed"
 }
