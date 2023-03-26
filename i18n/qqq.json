@@ -4,10 +4,10 @@
 			"Tran"
 		]
 	},
-    "securityapi-rest-access-denied": "Error message shown when user does not have permission to access the data",
-    "securityapi-rest-error": "Error message shown when security-api returns an error to caller",
-    "securityapi-invalid-ip": "Error message shown when IP passed as a parameter is not valid",
-    "securityapi-invalid-url": "Error message shown when base URL for security-api has not been set",
+	"securityapi-rest-access-denied": "Error message shown when user does not have permission to access the data",
+	"securityapi-rest-error": "Error message shown when security-api returns an error to caller",
+	"securityapi-invalid-ip": "Error message shown when IP passed as a parameter is not valid",
+	"securityapi-invalid-url": "Error message shown when base URL for security-api has not been set",
 	"action-securityapi-feed": "{{doc-action|security-api}}",
 	"right-securityapi-feed": "{{doc-right|security-api}}"
 }
