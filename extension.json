@@ -1,7 +1,7 @@
 {
 	"name": "SecurityApi",
 	"url": "https://www.mediawiki.org/wiki/Extension:SecurityApi",
-	"description": "Provides a proxy to security-api",
+	"description": "Provides a proxy to ipoid",
 	"version": "1.0",
 	"license-name": "MIT",
 	"type": "other",
@@ -45,7 +45,7 @@
 	],
 	"config": {
 		"wgSecurityApiUrl": {
-			"description": "Base URL of security-api to be called",
+			"description": "Base URL of ipoid to be called",
 			"value": false
 		}
 	},

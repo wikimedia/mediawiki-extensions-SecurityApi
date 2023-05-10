@@ -65,7 +65,7 @@ class IpHandler extends SimpleHandler {
 	}
 
 	/**
-	 * Get all info on an ip provided by security-api/feed
+	 * Get all info on an ip provided by ipoid/feed
 	 *
 	 * @param string $ip
 	 * @return Response
@@ -87,7 +87,7 @@ class IpHandler extends SimpleHandler {
 				new MessageValue( 'securityapi-invalid-url' ), 400 );
 		}
 
-		// Get response from security-api
+		// Get response from ipoid
 		$url = $baseUrl . '/feed/v1/ip/' . $ip;
 		$req = $this->httpRequestFactory->create( $url, [ 'method' => 'GET' ] );
 		$response = $req->execute();

@@ -5,9 +5,9 @@
 		]
 	},
 	"securityapi-rest-access-denied": "You do not have permission to perform the action",
-	"securityapi-rest-error": "security-api responded with an error",
+	"securityapi-rest-error": "ipoid responded with an error",
 	"securityapi-invalid-ip": "IP is invalid",
-	"securityapi-invalid-url": "security-api server URL is invalid",
-	"action-securityapi-feed": "retrieve data from the security-api feed",
-	"right-securityapi-feed": "Retrieve data from the security-api feed"
+	"securityapi-invalid-url": "ipoid server URL is invalid",
+	"action-securityapi-feed": "retrieve data from the ipoid feed",
+	"right-securityapi-feed": "Retrieve data from the ipoid feed"
 }
