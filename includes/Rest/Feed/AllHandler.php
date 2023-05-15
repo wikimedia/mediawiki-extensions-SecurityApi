@@ -69,13 +69,13 @@ class AllHandler extends SimpleHandler {
 	 */
 	public function run(): Response {
 		if (
-			!$this->permissionManager->userHasRight( $this->user, 'securityapi-feed' )
+			!$this->permissionManager->userHasRight( $this->user, 'securityapi-ipoid-feed' )
 		) {
 			throw new LocalizedHttpException(
 				new MessageValue( 'securityapi-rest-access-denied' ), $this->user->isRegistered() ? 403 : 401 );
 		}
 
-		$baseUrl = $this->config->get( 'SecurityApiUrl' );
+		$baseUrl = $this->config->get( 'SecurityApiIpoidUrl' );
 		if ( !$baseUrl ) {
 			throw new LocalizedHttpException(
 				new MessageValue( 'securityapi-invalid-url' ), 400 );

@@ -8,6 +8,6 @@
 	"securityapi-rest-error": "ipoid responded with an error",
 	"securityapi-invalid-ip": "IP is invalid",
 	"securityapi-invalid-url": "ipoid server URL is invalid",
-	"action-securityapi-feed": "retrieve data from the ipoid feed",
-	"right-securityapi-feed": "Retrieve data from the ipoid feed"
+	"action-securityapi-ipoid-feed": "retrieve data from the ipoid feed",
+	"right-securityapi-ipoid-feed": "Retrieve data from the ipoid feed"
 }

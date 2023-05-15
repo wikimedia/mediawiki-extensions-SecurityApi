@@ -71,7 +71,7 @@ class IpHandler extends SimpleHandler {
 	 * @return Response
 	 */
 	public function run( string $ip ): Response {
-		if ( !$this->permissionManager->userHasRight( $this->user, 'securityapi-feed' ) ) {
+		if ( !$this->permissionManager->userHasRight( $this->user, 'securityapi-ipoid-feed' ) ) {
 			throw new LocalizedHttpException(
 				new MessageValue( 'securityapi-rest-access-denied' ), $this->user->isRegistered() ? 403 : 401 );
 		}
@@ -81,7 +81,7 @@ class IpHandler extends SimpleHandler {
 				new MessageValue( 'securityapi-invalid-ip' ), 400 );
 		}
 
-		$baseUrl = $this->config->get( 'SecurityApiUrl' );
+		$baseUrl = $this->config->get( 'SecurityApiIpoidUrl' );
 		if ( !$baseUrl ) {
 			throw new LocalizedHttpException(
 				new MessageValue( 'securityapi-invalid-url' ), 400 );

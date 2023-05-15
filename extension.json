@@ -1,7 +1,7 @@
 {
 	"name": "SecurityApi",
 	"url": "https://www.mediawiki.org/wiki/Extension:SecurityApi",
-	"description": "Provides a proxy to ipoid",
+	"description": "Provides a proxy to APIs such as ipoid",
 	"version": "1.0",
 	"license-name": "MIT",
 	"type": "other",
@@ -17,7 +17,7 @@
 		"MediaWiki\\SecurityApi\\": "includes/"
 	},
 	"AvailableRights": [
-		"securityapi-feed"
+		"securityapi-ipoid-feed"
 	],
 	"RestRoutes": [
 		{
@@ -44,7 +44,7 @@
 		}
 	],
 	"config": {
-		"wgSecurityApiUrl": {
+		"wgSecurityApiIpoidUrl": {
 			"description": "Base URL of ipoid to be called",
 			"value": false
 		}
