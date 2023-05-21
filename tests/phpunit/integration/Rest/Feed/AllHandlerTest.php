@@ -91,7 +91,7 @@ class AllHandlerTest extends MediaWikiIntegrationTestCase {
 		$this->executeHandler( $handler, new RequestData() );
 	}
 
-	public function provideExecuteErrors() {
+	public static function provideExecuteErrors() {
 		return [
 			'access denied; not logged in' => [
 				[

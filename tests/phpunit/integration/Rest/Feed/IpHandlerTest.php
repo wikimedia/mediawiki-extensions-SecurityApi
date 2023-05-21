@@ -103,7 +103,7 @@ class IpHandlerTest extends MediaWikiIntegrationTestCase {
 		$this->executeHandler( $handler, $request );
 	}
 
-	public function provideExecuteErrors() {
+	public static function provideExecuteErrors() {
 		return [
 			'access denied; not logged in' => [
 				[
