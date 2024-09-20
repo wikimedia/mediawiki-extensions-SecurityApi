@@ -89,7 +89,7 @@ class IpHandler extends SimpleHandler {
 
 		// Get response from ipoid
 		$url = $baseUrl . '/feed/v1/ip/' . $ip;
-		$req = $this->httpRequestFactory->create( $url, [ 'method' => 'GET' ] );
+		$req = $this->httpRequestFactory->create( $url, [ 'method' => 'GET' ], __METHOD__ );
 		$response = $req->execute();
 
 		if ( !$response->isOK() ) {
